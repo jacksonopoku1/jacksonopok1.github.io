@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,14 @@
 
     <title>Jackson Opoku | Semiconductor Process Engineer</title>
 
+    <meta name="description"
+        content="Jackson Opoku - Senior Photomask and Lithography Process Engineer specializing in semiconductor technology transfer, EUV/DUV photomask engineering, and manufacturing leadership.">
+
     <style>
+
+        /* =========================
+           GLOBAL
+        ========================== */
 
         * {
             box-sizing: border-box;
@@ -27,53 +33,61 @@
             line-height: 1.6;
         }
 
+        a {
+            transition: 0.25s ease;
+        }
+
+
         /* =========================
-           HEADER
+           HEADER / HERO
         ========================== */
 
         header {
             background: #111827;
             color: white;
             text-align: center;
-            padding: 75px 20px;
+            padding: 85px 20px 75px;
         }
 
         header h1 {
-            font-size: 46px;
-            margin-bottom: 10px;
+            font-size: 48px;
+            margin-bottom: 12px;
             letter-spacing: 0.5px;
         }
 
         header h2 {
-            font-size: 22px;
+            font-size: 23px;
             font-weight: normal;
             color: #d1d5db;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         header p {
             font-size: 16px;
             color: #9ca3af;
+            max-width: 700px;
+            margin: auto;
         }
 
+
         /* =========================
-           NAVIGATION BUTTONS
+           HERO BUTTONS
         ========================== */
 
         .buttons {
-            margin-top: 30px;
+            margin-top: 32px;
         }
 
         .buttons a {
             display: inline-block;
             text-decoration: none;
-            padding: 13px 25px;
+            padding: 14px 27px;
             margin: 5px;
             border-radius: 7px;
             background: white;
             color: #111827;
             font-weight: bold;
-            transition: 0.25s ease;
+            border: 1px solid white;
         }
 
         .buttons a:hover {
@@ -84,96 +98,147 @@
         .buttons .contact-button {
             background: #2563eb;
             color: white;
+            border-color: #2563eb;
         }
 
         .buttons .contact-button:hover {
             background: #1d4ed8;
+            border-color: #1d4ed8;
         }
 
+
         /* =========================
-           MAIN
+           MAIN CONTAINER
         ========================== */
 
         .container {
-            max-width: 1000px;
+            max-width: 1050px;
             margin: auto;
-            padding: 55px 20px;
+            padding: 65px 20px;
         }
 
+
         /* =========================
-           SECTION TITLE
+           SECTION TITLES
         ========================== */
 
         .section-title {
             text-align: center;
-            font-size: 27px;
+            font-size: 29px;
             color: #111827;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
+
         /* =========================
-           HIGHLIGHTS
+           HIGHLIGHT CARDS
         ========================== */
 
         .highlights {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 50px;
+            gap: 28px;
+            margin-bottom: 55px;
         }
 
         .highlight-card {
             background: white;
             padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e5e7eb;
+            transition: 0.25s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
         }
 
         .highlight-card h3 {
             color: #111827;
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 21px;
+            margin-bottom: 14px;
         }
 
         .highlight-card h4 {
             color: #2563eb;
             font-size: 18px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
+            line-height: 1.4;
         }
 
         .highlight-card p {
             color: #4b5563;
             font-size: 16px;
+            line-height: 1.75;
         }
 
+        .highlight-card strong {
+            color: #111827;
+        }
+
+
         /* =========================
-           RESUME
+           IMPACT STAT
+        ========================== */
+
+        .impact-stat {
+            margin-top: 24px;
+            padding: 18px;
+            background: #f3f4f6;
+            border-left: 4px solid #2563eb;
+            border-radius: 5px;
+        }
+
+        .impact-stat strong {
+            display: block;
+            font-size: 25px;
+            color: #111827;
+            margin-bottom: 3px;
+        }
+
+        .impact-stat span {
+            color: #4b5563;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           RESUME SECTION
         ========================== */
 
         .resume-section {
             background: white;
             text-align: center;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
-            margin-bottom: 30px;
+            padding: 45px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e5e7eb;
+            margin-bottom: 35px;
         }
 
         .resume-section h2 {
             color: #111827;
-            margin-bottom: 15px;
+            font-size: 27px;
+            margin-bottom: 12px;
+        }
+
+        .resume-section p {
+            max-width: 700px;
+            margin: 0 auto 22px;
+            color: #6b7280;
+            font-size: 16px;
         }
 
         .resume-button {
             display: inline-block;
-            margin-top: 10px;
-            padding: 14px 28px;
+            padding: 14px 30px;
             background: #111827;
             color: white;
             text-decoration: none;
             border-radius: 7px;
             font-weight: bold;
-            transition: 0.25s ease;
         }
 
         .resume-button:hover {
@@ -181,31 +246,41 @@
             transform: translateY(-2px);
         }
 
+
         /* =========================
-           CONTACT
+           CONTACT SECTION
         ========================== */
 
         .contact-section {
             background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+            padding: 45px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e5e7eb;
         }
 
         .contact-section h2 {
             text-align: center;
             color: #111827;
-            margin-bottom: 25px;
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        .contact-intro {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
         }
 
         .contact-item {
             text-align: center;
-            margin: 14px 0;
+            margin: 18px 0;
             font-size: 17px;
         }
 
         .contact-item strong {
             color: #111827;
+            margin-right: 5px;
         }
 
         .contact-item a {
@@ -217,16 +292,18 @@
             text-decoration: underline;
         }
 
+
         /* =========================
            FOOTER
         ========================== */
 
         footer {
             text-align: center;
-            padding: 30px 20px;
+            padding: 32px 20px;
             color: #6b7280;
             font-size: 14px;
         }
+
 
         /* =========================
            MOBILE
@@ -235,29 +312,63 @@
         @media (max-width: 700px) {
 
             header {
-                padding: 55px 20px;
+                padding: 60px 20px;
             }
 
             header h1 {
-                font-size: 34px;
+                font-size: 36px;
             }
 
             header h2 {
                 font-size: 19px;
             }
 
+            header p {
+                font-size: 15px;
+            }
+
+            .buttons {
+                margin-top: 25px;
+            }
+
+            .buttons a {
+                display: block;
+                max-width: 250px;
+                margin: 9px auto;
+            }
+
+            .container {
+                padding: 45px 18px;
+            }
+
+            .section-title {
+                font-size: 25px;
+            }
+
             .highlights {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
 
             .highlight-card {
                 padding: 28px;
             }
 
-            .buttons a {
-                display: block;
-                max-width: 240px;
-                margin: 8px auto;
+            .highlight-card h3 {
+                font-size: 20px;
+            }
+
+            .highlight-card h4 {
+                font-size: 17px;
+            }
+
+            .highlight-card p {
+                font-size: 15px;
+            }
+
+            .resume-section,
+            .contact-section {
+                padding: 35px 22px;
             }
 
         }
@@ -271,7 +382,7 @@
 
 
     <!-- =========================
-         HEADER
+         HERO / HEADER
     ========================== -->
 
     <header>
@@ -283,13 +394,16 @@
         </h2>
 
         <p>
-            Semiconductor Process Engineering | EUV/DUV | Technology Transfer
+            Semiconductor Process Engineering |
+            EUV/DUV |
+            Technology Transfer |
+            Manufacturing Leadership
         </p>
 
 
         <div class="buttons">
 
-            <!-- RESUME -->
+            <!-- RESUME BUTTON -->
 
             <a
                 href="Jackson_Opoku_Resume_2P_09132026.pdf"
@@ -300,13 +414,13 @@
             </a>
 
 
-            <!-- CONTACT -->
+            <!-- CONTACT BUTTON -->
 
             <a
                 class="contact-button"
                 href="#contact"
             >
-                Contact
+                Contact Me
             </a>
 
         </div>
@@ -334,7 +448,9 @@
         <div class="highlights">
 
 
-            <!-- SEMICONDUCTOR EXPERTISE -->
+            <!-- =========================
+                 SEMICONDUCTOR EXPERTISE
+            ========================== -->
 
             <div class="highlight-card">
 
@@ -343,23 +459,38 @@
                 </h3>
 
                 <h4>
-                    N3/N4/N5 Technology Transfer &amp;
+                    N3 / N4 / N5 Technology Transfer &amp;
                     Photomask Engineering
                 </h4>
 
                 <p>
                     Part of the team responsible for the
-                    <strong>N3/N4/N5 technology transfer from TSMC Taiwan
-                    to TSMC Arizona</strong>, with experience supporting
-                    EUV/DUV photomask defense, lithography processes,
-                    defect reduction, and high-volume semiconductor
-                    manufacturing.
+                    <strong>
+                        N3, N4, and N5 technology transfer from
+                        TSMC Taiwan to TSMC Arizona
+                    </strong>,
+                    supporting the transition of advanced semiconductor
+                    technologies into high-volume manufacturing.
+                </p>
+
+                <br>
+
+                <p>
+                    Experience includes
+                    <strong>
+                        EUV/DUV photomask engineering, lithography processes,
+                        mask defect defense, wafer image evaluation,
+                        defect reduction, and process performance improvement
+                    </strong>.
                 </p>
 
             </div>
 
 
-            <!-- LEADERSHIP & MANUFACTURING IMPACT -->
+
+            <!-- =========================
+                 LEADERSHIP & MANUFACTURING
+            ========================== -->
 
             <div class="highlight-card">
 
@@ -373,15 +504,42 @@
 
                 <p>
                     Led and trained semiconductor manufacturing technicians
-                    while supporting the Arizona fab's production ramp.
-                    Developed technician upskilling initiatives that
-                    expanded technician capabilities and helped reduce
-                    reliance on engineers for selected tasks during
-                    off-shift operations.
+                    while supporting the
+                    <strong>
+                        TSMC Arizona production ramp
+                    </strong>.
                 </p>
 
-            </div>
+                <br>
 
+                <p>
+                    Developed technician upskilling initiatives that
+                    expanded technician capabilities and enabled technicians
+                    to perform selected engineer-level tasks, helping
+                    <strong>
+                        reduce reliance on engineers during off-shift
+                        operations
+                    </strong>
+                    while maintaining safety, quality, and process control.
+                </p>
+
+
+                <!-- PRODUCTION IMPACT -->
+
+                <div class="impact-stat">
+
+                    <strong>
+                        25,000 Wafers / Month
+                    </strong>
+
+                    <span>
+                        Supported manufacturing production ramp and
+                        high-volume semiconductor operations.
+                    </span>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -397,13 +555,23 @@
                 Resume
             </h2>
 
+            <p>
+                Explore my full professional experience in semiconductor
+                process engineering, photomask technology, advanced
+                lithography, technology transfer, and manufacturing
+                leadership.
+            </p>
+
+
+            <!-- PDF LINK -->
+
             <a
                 class="resume-button"
                 href="Jackson_Opoku_Resume_2P_09132026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                View My Resume
+                View My Full Resume
             </a>
 
         </section>
@@ -420,15 +588,25 @@
         >
 
             <h2>
-                Contact
+                Let's Connect
             </h2>
 
+            <p class="contact-intro">
+                I welcome opportunities to connect regarding semiconductor
+                engineering, advanced lithography, photomask technology,
+                technology transfer, and manufacturing leadership.
+            </p>
 
-            <!-- LINKEDIN -->
+
+            <!-- =========================
+                 LINKEDIN
+            ========================== -->
 
             <div class="contact-item">
 
-                <strong>LinkedIn:</strong>
+                <strong>
+                    LinkedIn:
+                </strong>
 
                 <a
                     href="https://www.linkedin.com/in/jackson-opoku/"
@@ -441,31 +619,42 @@
             </div>
 
 
-            <!-- EMAIL -->
+            <!-- =========================
+                 EMAIL
+            ========================== -->
 
             <div class="contact-item">
 
-                <strong>Email:</strong>
+                <strong>
+                    Email:
+                </strong>
 
-                <a href="mailto:Jacksonaopoku@gmail.com">
+                <a
+                    href="mailto:Jacksonaopoku@gmail.com"
+                >
                     Jacksonaopoku@gmail.com
                 </a>
 
             </div>
 
 
-            <!-- PHONE -->
+            <!-- =========================
+                 PHONE
+            ========================== -->
 
             <div class="contact-item">
 
-                <strong>Phone Number:</strong>
+                <strong>
+                    Phone:
+                </strong>
 
-                <a href="tel:6028136390">
+                <a
+                    href="tel:6028136390"
+                >
                     602-813-6390
                 </a>
 
             </div>
-
 
         </section>
 
@@ -488,4 +677,3 @@
 </body>
 
 </html>
-```
