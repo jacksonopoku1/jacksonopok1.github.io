@@ -1,5 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +9,15 @@
     <title>Jackson Opoku | Semiconductor Process Engineer</title>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -20,44 +27,73 @@
             background: #f5f7fa;
         }
 
+        /* =========================
+           HEADER
+        ========================== */
+
         header {
             background: #111827;
             color: white;
-            padding: 70px 20px;
+            padding: 75px 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 44px;
             margin-bottom: 10px;
         }
 
         header h2 {
-            font-size: 22px;
+            font-size: 23px;
             font-weight: normal;
             margin-bottom: 20px;
+            color: #d1d5db;
         }
 
         header p {
-            max-width: 750px;
+            max-width: 800px;
             margin: auto;
             font-size: 17px;
+            color: #e5e7eb;
         }
 
+        /* =========================
+           BUTTONS
+        ========================== */
+
         .buttons {
-            margin-top: 25px;
+            margin-top: 30px;
         }
 
         .buttons a {
             display: inline-block;
-            padding: 12px 22px;
-            margin: 5px;
-            border-radius: 6px;
+            padding: 13px 24px;
+            margin: 6px;
+            border-radius: 7px;
             background: white;
             color: #111827;
             text-decoration: none;
             font-weight: bold;
+            transition: 0.3s;
         }
+
+        .buttons a:hover {
+            background: #e5e7eb;
+            transform: translateY(-2px);
+        }
+
+        .resume-button {
+            background: #ffffff !important;
+        }
+
+        .linkedin-button {
+            background: #2563eb !important;
+            color: white !important;
+        }
+
+        /* =========================
+           MAIN CONTAINER
+        ========================== */
 
         .container {
             max-width: 1000px;
@@ -65,12 +101,16 @@
             padding: 50px 20px;
         }
 
+        /* =========================
+           SECTIONS
+        ========================== */
+
         section {
             background: white;
             padding: 35px;
             margin-bottom: 25px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
         }
 
         h3 {
@@ -81,18 +121,28 @@
             padding-bottom: 8px;
         }
 
+        /* =========================
+           EXPERIENCE
+        ========================== */
+
         .job {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
         }
 
         .job h4 {
             font-size: 19px;
             margin-bottom: 5px;
+            color: #111827;
         }
 
         .job-date {
             color: #666;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-size: 15px;
         }
 
         ul {
@@ -100,8 +150,12 @@
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 9px;
         }
+
+        /* =========================
+           SKILLS
+        ========================== */
 
         .skills {
             display: flex;
@@ -113,27 +167,124 @@
             background: #eef2f7;
             padding: 9px 14px;
             border-radius: 5px;
+            font-size: 15px;
         }
+
+        /* =========================
+           RESUME
+        ========================== */
+
+        .resume-box {
+            text-align: center;
+        }
+
+        .resume-box p {
+            margin-bottom: 20px;
+        }
+
+        .view-resume {
+            display: inline-block;
+            padding: 13px 24px;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .view-resume:hover {
+            background: #374151;
+            transform: translateY(-2px);
+        }
+
+        .resume-note {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-item {
+            margin-bottom: 12px;
+        }
+
+        .contact-item strong {
+            color: #111827;
+        }
+
+        .contact-item a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
 
         footer {
             text-align: center;
             padding: 30px;
             color: #666;
+            font-size: 14px;
         }
 
+        /* =========================
+           MOBILE
+        ========================== */
+
         @media (max-width: 600px) {
+
+            header {
+                padding: 55px 20px;
+            }
+
             header h1 {
                 font-size: 32px;
+            }
+
+            header h2 {
+                font-size: 19px;
+            }
+
+            header p {
+                font-size: 16px;
             }
 
             section {
                 padding: 25px;
             }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            .buttons a {
+                display: block;
+                max-width: 250px;
+                margin: 8px auto;
+            }
+
         }
+
     </style>
+
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
 
 <header>
 
@@ -148,18 +299,53 @@
         to Arizona.
     </p>
 
+
     <div class="buttons">
 
-        <a href="Jackson_Opoku_Resume_2P_09132026.pdf">Resume</a>
+        <!-- RESUME PDF -->
 
-        <a href="#">Contact</a>
+        <a
+            class="resume-button"
+            href="Jackson_Opoku_Resume_2P_09132026.pdf"
+            target="_blank"
+        >
+            View Resume
+        </a>
+
+
+        <!-- LINKEDIN -->
+
+        <a
+            class="linkedin-button"
+            href="https://www.linkedin.com/in/jackson-opoku/"
+            target="_blank"
+        >
+            LinkedIn
+        </a>
+
+
+        <!-- CONTACT -->
+
+        <a href="#contact">
+            Contact
+        </a>
 
     </div>
 
 </header>
 
 
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
 <div class="container">
+
+
+    <!-- =========================
+         ABOUT ME
+    ========================== -->
 
     <section>
 
@@ -176,17 +362,26 @@
     </section>
 
 
+
+    <!-- =========================
+         PROFESSIONAL EXPERIENCE
+    ========================== -->
+
     <section>
 
         <h3>Professional Experience</h3>
 
+
         <div class="job">
 
-            <h4>TSMC — Senior Photomask / Lithography Process Engineer</h4>
+            <h4>
+                TSMC — Senior Photomask / Lithography Process Engineer
+            </h4>
 
             <div class="job-date">
                 Arizona
             </div>
+
 
             <ul>
 
@@ -220,13 +415,17 @@
         </div>
 
 
+
         <div class="job">
 
-            <h4>TSMC — Technician Supervisor</h4>
+            <h4>
+                TSMC — Technician Supervisor
+            </h4>
 
             <div class="job-date">
                 Arizona
             </div>
+
 
             <ul>
 
@@ -252,74 +451,143 @@
     </section>
 
 
+
+    <!-- =========================
+         TECHNICAL EXPERTISE
+    ========================== -->
+
     <section>
 
         <h3>Technical Expertise</h3>
 
+
         <div class="skills">
 
-            <div class="skill">Photomask Engineering</div>
+            <div class="skill">
+                Photomask Engineering
+            </div>
 
-            <div class="skill">Lithography</div>
+            <div class="skill">
+                Lithography
+            </div>
 
-            <div class="skill">EUV</div>
+            <div class="skill">
+                EUV
+            </div>
 
-            <div class="skill">DUV</div>
+            <div class="skill">
+                DUV
+            </div>
 
-            <div class="skill">Mask Defense</div>
+            <div class="skill">
+                Mask Defense
+            </div>
 
-            <div class="skill">High-Volume Manufacturing</div>
+            <div class="skill">
+                High-Volume Manufacturing
+            </div>
 
-            <div class="skill">Technology Transfer</div>
+            <div class="skill">
+                Technology Transfer
+            </div>
 
-            <div class="skill">Process Improvement</div>
+            <div class="skill">
+                Process Improvement
+            </div>
 
-            <div class="skill">Defect Reduction</div>
+            <div class="skill">
+                Defect Reduction
+            </div>
 
-            <div class="skill">Semiconductor Manufacturing</div>
+            <div class="skill">
+                Semiconductor Manufacturing
+            </div>
 
         </div>
 
     </section>
 
 
-    <section id="Resume">
 
-        <h3>Jackson_Opoku_Resume_2P_09132026.pdf</h3>
+    <!-- =========================
+         RESUME
+    ========================== -->
 
-        <p>
-            My professional resume is available for review.
-        </p>
+    <section id="resume">
 
-        <br>
+        <div class="resume-box">
 
-        <p>
-            <strong>Jackson_Opoku_Resume_2P_09132026.pdf:</strong>
-        </p>
+            <h3>Resume</h3>
+
+            <p>
+                My professional resume is available for review.
+            </p>
+
+
+            <!-- PDF LINK -->
+
+            <a
+                class="view-resume"
+                href="Jackson_Opoku_Resume_2P_09132026.pdf"
+                target="_blank"
+            >
+                View My Resume (PDF)
+            </a>
+
+
+            <p class="resume-note">
+                Jackson_Opoku_Resume_2P_09132026.pdf
+            </p>
+
+        </div>
 
     </section>
 
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
     <section id="contact">
 
         <h3>Contact</h3>
 
-        <p>
-            <strong>https://www.linkedin.com/in/jackson-opoku/:</strong>
-            
-        </p>
 
-        <br>
+        <div class="contact-item">
 
-        <p>
-            <strong>Jacksonaopoku@gmail.com:</strong>
-            Jacksonaopoku@gmail.com
-        </p>
+            <strong>LinkedIn:</strong>
+
+            <a
+                href="https://www.linkedin.com/in/jackson-opoku/"
+                target="_blank"
+            >
+                linkedin.com/in/jackson-opoku
+            </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <strong>Email:</strong>
+
+            <a href="mailto:Jacksonaopoku@gmail.com">
+                Jacksonaopoku@gmail.com
+            </a>
+
+        </div>
 
     </section>
 
+
 </div>
 
+
+
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
@@ -327,5 +595,8 @@
 
 </footer>
 
+
 </body>
+
 </html>
+```
