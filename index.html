@@ -3,11 +3,10 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jackson Opoku</title>
+    <title>Jackson Opoku | Semiconductor Process Engineer</title>
 
     <style>
 
@@ -24,91 +23,184 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #f5f7fa;
-            color: #222;
+            color: #1f2937;
+            line-height: 1.6;
         }
 
-        /* HEADER */
+        /* =========================
+           HEADER
+        ========================== */
 
         header {
             background: #111827;
             color: white;
-            padding: 60px 20px;
             text-align: center;
+            padding: 75px 20px;
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 46px;
             margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        header h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #d1d5db;
+            margin-bottom: 12px;
         }
 
         header p {
-            font-size: 18px;
-            color: #d1d5db;
+            font-size: 16px;
+            color: #9ca3af;
         }
 
-        /* NAVIGATION */
+        /* =========================
+           NAVIGATION BUTTONS
+        ========================== */
 
-        nav {
-            margin-top: 25px;
+        .buttons {
+            margin-top: 30px;
         }
 
-        nav a {
+        .buttons a {
             display: inline-block;
+            text-decoration: none;
+            padding: 13px 25px;
             margin: 5px;
-            padding: 12px 22px;
+            border-radius: 7px;
             background: white;
             color: #111827;
-            text-decoration: none;
-            border-radius: 6px;
             font-weight: bold;
+            transition: 0.25s ease;
         }
 
-        nav a:hover {
+        .buttons a:hover {
+            transform: translateY(-2px);
             background: #e5e7eb;
         }
 
-        /* MAIN */
+        .buttons .contact-button {
+            background: #2563eb;
+            color: white;
+        }
+
+        .buttons .contact-button:hover {
+            background: #1d4ed8;
+        }
+
+        /* =========================
+           MAIN
+        ========================== */
 
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 0 20px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 55px 20px;
         }
 
-        section {
+        /* =========================
+           SECTION TITLE
+        ========================== */
+
+        .section-title {
+            text-align: center;
+            font-size: 27px;
+            color: #111827;
+            margin-bottom: 30px;
+        }
+
+        /* =========================
+           HIGHLIGHTS
+        ========================== */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .highlight-card {
             background: white;
             padding: 35px;
-            margin-bottom: 25px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-            text-align: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
         }
 
-        h2 {
+        .highlight-card h3 {
             color: #111827;
-            margin-bottom: 20px;
+            font-size: 20px;
+            margin-bottom: 15px;
         }
 
-        /* RESUME BUTTON */
+        .highlight-card h4 {
+            color: #2563eb;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .highlight-card p {
+            color: #4b5563;
+            font-size: 16px;
+        }
+
+        /* =========================
+           RESUME
+        ========================== */
+
+        .resume-section {
+            background: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+            margin-bottom: 30px;
+        }
+
+        .resume-section h2 {
+            color: #111827;
+            margin-bottom: 15px;
+        }
 
         .resume-button {
             display: inline-block;
+            margin-top: 10px;
             padding: 14px 28px;
             background: #111827;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 7px;
             font-weight: bold;
+            transition: 0.25s ease;
         }
 
         .resume-button:hover {
             background: #374151;
+            transform: translateY(-2px);
         }
 
-        /* CONTACT */
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            color: #111827;
+            margin-bottom: 25px;
+        }
 
         .contact-item {
-            margin: 15px 0;
+            text-align: center;
+            margin: 14px 0;
             font-size: 17px;
         }
 
@@ -125,29 +217,47 @@
             text-decoration: underline;
         }
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================== */
 
         footer {
             text-align: center;
-            padding: 30px;
-            color: #666;
+            padding: 30px 20px;
+            color: #6b7280;
             font-size: 14px;
         }
 
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================== */
 
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
+
+            header {
+                padding: 55px 20px;
+            }
 
             header h1 {
-                font-size: 32px;
+                font-size: 34px;
             }
 
-            header p {
-                font-size: 16px;
+            header h2 {
+                font-size: 19px;
             }
 
-            section {
-                padding: 25px;
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-card {
+                padding: 28px;
+            }
+
+            .buttons a {
+                display: block;
+                max-width: 240px;
+                margin: 8px auto;
             }
 
         }
@@ -160,46 +270,28 @@
 <body>
 
 
-    <!-- HEADER -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
     <header>
 
         <h1>Jackson Opoku</h1>
 
-        <p>Semiconductor Process Engineer</p>
+        <h2>
+            Senior Photomask / Lithography Process Engineer
+        </h2>
 
-        <nav>
-
-            <a
-                href="Jackson_Opoku_Resume_2P_09132026.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Resume
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </nav>
-
-    </header>
+        <p>
+            Semiconductor Process Engineering | EUV/DUV | Technology Transfer
+        </p>
 
 
-    <!-- MAIN CONTENT -->
+        <div class="buttons">
 
-    <div class="container">
-
-
-        <!-- RESUME -->
-
-        <section id="resume">
-
-            <h2>Resume</h2>
+            <!-- RESUME -->
 
             <a
-                class="resume-button"
                 href="Jackson_Opoku_Resume_2P_09132026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -207,15 +299,132 @@
                 View Resume
             </a>
 
+
+            <!-- CONTACT -->
+
+            <a
+                class="contact-button"
+                href="#contact"
+            >
+                Contact
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="container">
+
+
+        <!-- =========================
+             KEY HIGHLIGHTS
+        ========================== -->
+
+        <h2 class="section-title">
+            Key Highlights
+        </h2>
+
+
+        <div class="highlights">
+
+
+            <!-- SEMICONDUCTOR EXPERTISE -->
+
+            <div class="highlight-card">
+
+                <h3>
+                    Semiconductor Expertise
+                </h3>
+
+                <h4>
+                    N3/N4/N5 Technology Transfer &amp;
+                    Photomask Engineering
+                </h4>
+
+                <p>
+                    Part of the team responsible for the
+                    <strong>N3/N4/N5 technology transfer from TSMC Taiwan
+                    to TSMC Arizona</strong>, with experience supporting
+                    EUV/DUV photomask defense, lithography processes,
+                    defect reduction, and high-volume semiconductor
+                    manufacturing.
+                </p>
+
+            </div>
+
+
+            <!-- LEADERSHIP & MANUFACTURING IMPACT -->
+
+            <div class="highlight-card">
+
+                <h3>
+                    Leadership &amp; Manufacturing Impact
+                </h3>
+
+                <h4>
+                    Technician Leadership &amp; Production Ramp
+                </h4>
+
+                <p>
+                    Led and trained semiconductor manufacturing technicians
+                    while supporting the Arizona fab's production ramp.
+                    Developed technician upskilling initiatives that
+                    expanded technician capabilities and helped reduce
+                    reliance on engineers for selected tasks during
+                    off-shift operations.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             RESUME
+        ========================== -->
+
+        <section class="resume-section">
+
+            <h2>
+                Resume
+            </h2>
+
+            <a
+                class="resume-button"
+                href="Jackson_Opoku_Resume_2P_09132026.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View My Resume
+            </a>
+
         </section>
 
 
-        <!-- CONTACT -->
 
-        <section id="contact">
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
-            <h2>Contact</h2>
+        <section
+            class="contact-section"
+            id="contact"
+        >
 
+            <h2>
+                Contact
+            </h2>
+
+
+            <!-- LINKEDIN -->
 
             <div class="contact-item">
 
@@ -232,6 +441,8 @@
             </div>
 
 
+            <!-- EMAIL -->
+
             <div class="contact-item">
 
                 <strong>Email:</strong>
@@ -243,6 +454,8 @@
             </div>
 
 
+            <!-- PHONE -->
+
             <div class="contact-item">
 
                 <strong>Phone Number:</strong>
@@ -253,13 +466,17 @@
 
             </div>
 
+
         </section>
 
 
-    </div>
+    </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer>
 
